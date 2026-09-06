@@ -1,0 +1,32 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>小事托管所隐私政策</title><link rel="stylesheet" href="style.css"></head><body><main>
+<nav><a href="index.html">小事托管所</a><strong>隐私政策</strong><a href="terms.html">服务条款</a><a href="support.html">支持</a><a href="account-deletion.html">删除账户</a></nav>
+<h1>小事托管所隐私政策</h1><p class="updated">更新及生效日期：2026 年 9 月 5 日</p>
+<p>本政策说明詹旻玥（“我们”）在提供小事托管所 iOS 应用时如何处理信息。小事托管所以本地使用为默认路径；登录与智能整理均为可选功能。</p>
+
+<h2>1. 我们处理哪些信息</h2>
+<p><strong>本地内容。</strong>你记录的事项、时间、分类、冷静期、下一步、批处理会话、积分、偏好和你主动选择的事项图片默认存储在设备本地。系统照片选择器只会向 App 提供你主动选中的图片，App 不会浏览整个照片库。</p>
+<p><strong>智能整理输入。</strong>只有在你明确同意并主动提交文字时，该段文字、当前时间、下一批处理时间、时区和语言设置会经 Supabase Edge Function 发送给 DeepSeek API，以拆分事项并识别时间、分类和建议的下一步。智能整理接口不接收你的账户令牌或内部账户 UUID，我们也不把该接口收到的原文写入项目数据库。DeepSeek 可能依其政策处理并保存 API 输入，因此请勿提交身份证号、健康信息、财务账号、他人隐私等敏感信息。你可以在设置中关闭智能整理，继续使用本地基础分类。</p>
+<p><strong>账户信息。</strong>选择 Apple 登录时，我们处理 Apple 提供的稳定账户标识和你授权的显示名称。我们据此创建内部 UUID，并把登录令牌保存在设备 Keychain。</p>
+<p><strong>同步快照。</strong>登录后，本地事项、设置、积分和批处理记录会上传至 Supabase，并与内部账户 UUID 关联，用于账户同步和恢复。当前版本不会把事项图片纳入 Supabase 快照，图片仅留在添加它的设备上，但会包含在你主动导出的本地 JSON 备份中。</p>
+<p><strong>语音输入。</strong>语音输入使用 Apple Speech framework。App 不自行保存或上传音频文件；系统是否在设备端完成识别取决于设备、语言与 Apple 服务能力。</p>
+
+<h2>2. 使用目的与法律基础</h2>
+<p>我们仅为提供事项托管、智能分类、账户认证、同步、数据导出、删号、安全防滥用和必要故障排查而处理上述信息。智能整理基于你的明确选择；账户与同步基于你主动登录和请求相关服务。</p>
+
+<h2>3. 第三方处理者</h2>
+<ul><li><strong>Supabase：</strong>承载 Edge Functions、账户表和同步快照。</li><li><strong>DeepSeek：</strong>处理你同意提交的文字并返回结构化整理结果；其服务可能在中国境内处理或存储数据。</li><li><strong>Apple：</strong>提供 Sign in with Apple、Speech Recognition、通知与系统级安全存储。</li></ul>
+<p>我们不出售个人信息，不提供广告，也不以跨公司广告画像为目的进行追踪。</p>
+
+<h2>4. 保存期限</h2>
+<p>本地数据保留至你在 App 内删除、卸载 App 或清除设备数据。账户与同步快照保留至你在 App 内永久删除账户，或我们因法律义务需要在有限期限内保留。App 会在删号时删除账户与级联同步快照；Apple 登录会同时尝试撤销服务端令牌。第三方处理者的网络安全日志与 API 数据保存期限由其适用条款和法律义务决定。</p>
+
+<h2>5. 你的选择与权利</h2>
+<ul><li>无需登录即可使用核心功能。</li><li>可随时关闭智能整理并使用本地基础分类。</li><li>可导出本地 JSON 备份。</li><li>可删除全部本地数据。</li><li>登录后可在 App 的设置页永久删除云端账户、同步快照和本机数据，无需联系人工客服。</li><li>可通过下方邮箱请求访问、更正、删除或咨询。</li></ul>
+
+<h2>6. 安全与儿童</h2>
+<p>网络传输使用 HTTPS；会话令牌保存在 iOS Keychain；数据库表不向客户端直接开放。任何系统都无法保证绝对安全。小事托管所不是面向儿童设计的服务，我们不会明知收集儿童个人信息。</p>
+
+<h2>7. 联系我们</h2>
+<p>运营者：詹旻玥<br>联系邮箱：<a href="mailto:1270440631@qq.com">1270440631@qq.com</a></p>
+<p>如政策发生实质变化，我们会在 App 或本页面中提供适当通知。</p>
+<footer>© 2026 詹旻玥</footer></main></body></html>
